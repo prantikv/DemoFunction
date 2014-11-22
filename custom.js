@@ -10,7 +10,7 @@ function onInitFs(fs){
     fileEntry.isFile === true
      fileEntry.name == 'prantik.txt'
      fileEntry.fullPath == '/prantik.txt'
-
+     alert("file created");
   }, errorHandler);
 
 }
