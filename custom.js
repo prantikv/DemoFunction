@@ -1,7 +1,7 @@
 
 function onInitFs(fs){
 	 fileSystem = fs;
-	 alert("fileSystem->"+fileSystem.name+"path is->"+fileSystem.fullPath );
+	 alert("fileSystem->"+fileSystem.name+" root  is->"+fileSystem.root );
 	// fileSystem.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
 
  //    fileEntry.isFile === true
