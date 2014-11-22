@@ -7,7 +7,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
  
-alert(navigator.camera);
+
+ alert(cordova.file);
+    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFSSuccess, onError);
 
 }
 
+function onFSSuccess(fs){
+	 fileSystem = fs;
+	 alert("Name"+fileSystem.name+"Root name"+fileSystem.root.name  );
+}
