@@ -5,13 +5,13 @@
 function onInitFs(fs){
 	 fileSystem = fs;
 	 alert("got the file fileSystem" );
-	fileSystem.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
+	// fileSystem.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
 
-    fileEntry.isFile === true
-     fileEntry.name == 'prantik.txt'
-     fileEntry.fullPath == '/prantik.txt'
-     alert("file created");
-  }, errorHandler);
+ //    fileEntry.isFile === true
+ //     fileEntry.name == 'prantik.txt'
+ //     fileEntry.fullPath == '/prantik.txt'
+ //     alert("file created");
+ //  }, errorHandler);
 
 }
 
