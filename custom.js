@@ -7,9 +7,9 @@ function onInitFs(fs){
 	 alert("got the file fileSystem" );
 	fileSystem.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
 
-    // fileEntry.isFile === true
-    // fileEntry.name == 'log.txt'
-    // fileEntry.fullPath == '/log.txt'
+    fileEntry.isFile === true
+     fileEntry.name == 'prantik.txt'
+     fileEntry.fullPath == '/prantik.txt'
 
   }, errorHandler);
 
