@@ -5,7 +5,7 @@
 function onInitFs(fs){
 	 fileSystem = fs;
 	 alert("got the file fileSystem" );
-	   fs.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
+	fileSystem.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
 
     // fileEntry.isFile === true
     // fileEntry.name == 'log.txt'
