@@ -14,5 +14,5 @@ function onDeviceReady() {
 
 function onFSSuccess(fs){
 	 fileSystem = fs;
-	 alert("Name"+fileSystem.name+"Root name"+fileSystem.root.name  );
+	 alert("got the file fileSystem" );
 }
