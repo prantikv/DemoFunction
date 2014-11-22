@@ -13,7 +13,7 @@ function onInitFs(fs){
  //     alert("file created");
  //  }, errorHandler);
 
-}
+//}
 
 
 }
