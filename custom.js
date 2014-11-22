@@ -7,8 +7,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
  
-
- alert(cordova.file);
+ 	alert(cordova.file.externalRootDirectory);
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFSSuccess, onError);
 
 }
