@@ -5,6 +5,17 @@
 function onInitFs(fs){
 	 fileSystem = fs;
 	 alert("got the file fileSystem" );
+	   fs.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
+
+    // fileEntry.isFile === true
+    // fileEntry.name == 'log.txt'
+    // fileEntry.fullPath == '/log.txt'
+
+  }, errorHandler);
+
+}
+
+
 }
 function errorHandler(e){
 	alert("Files system error"+e.code);
