@@ -11,9 +11,9 @@ function onInitFs(fs){
 
 function writeFile() {
   //Get a file name for the file
-  var theFileName = createRandomString(8) + '.txt';
-  alert("writeFile: " + theFileName);
-  theFileSystem.root.getFile(theFileName, {create : true}, onGetFileSuccess, onFileError);
+  var fileSystem = createRandomString(8) + '.txt';
+  alert("writeFile: " + fileSystem);
+  theFileSystem.root.getFile(fileSystem, {create : true}, onGetFileSuccess, onFileError);
 }
 
 function onGetFileSuccess(theFile) {
