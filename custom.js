@@ -2,7 +2,7 @@
 function onInitFs(fs){
 	 fileSystem = fs;
 	 alert("fileSystem->"+fileSystem.name+" root  is->"+fileSystem.root );
-	 
+	   console.log(fileSystem);
 
 	fileSystem.root.getFile('prantik.txt', {create: true, exclusive: true}, function(fileEntry) {
 
