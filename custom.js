@@ -14,8 +14,9 @@ function onInitFs(fs){
 
 //}
 
-
 }
+
+
 function errorHandler(e){
 	alert("Files system error"+e.code);
 
